@@ -9,18 +9,20 @@
     "dev": "webpack serve --open",
     "build:prod": "webpack --mode=production",
     "server": "node ./server.mjs",
+    "predeploy": "npm run build:prod",
+    "deploy": "gh-pages -d dist",
     "start": "npm run build:prod && npm run server"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ArthurMilligan/Portfolio.git"
+    "url": "git+https://github.com/ArthurMilligan/todos.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ArthurMilligan/Portfolio/issues"
+    "url": "https://github.com/ArthurMilligan/todos/issues"
   },
-  "homepage": "https://github.com/ArthurMilligan/Portfolio#readme",
+  "homepage": "https://ArthurMilligan.github.io/todos",
   "devDependencies": {
     "@babel/core": "^7.22.1",
     "@babel/preset-env": "^7.22.4",
@@ -42,6 +44,7 @@
     "eslint-plugin-n": "^15.7.0",
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.32.2",
+    "gh-pages": "^6.0.0",
     "html-webpack-plugin": "^5.5.1",
     "postcss": "^8.4.24",
     "postcss-loader": "^7.3.2",
