@@ -1,0 +1,11 @@
+:root{
+    --r:'Roboto'
+}
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/Roboto-Regular.ttf');
+  }
+body{
+    display: flex;
+    justify-content: center;
+}
